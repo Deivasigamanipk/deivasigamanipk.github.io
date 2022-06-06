@@ -53,5 +53,11 @@ function calculate(tch,top,feed,disch,mill) {
 }
 
 f=calculate(115,932,927,945,3)
-console.log(f.Feed,f.Dis,f.Trash)
-console.log(f.rfeed,f.rdisch,f.rtrash)
+//console.log(f.Feed,f.Dis,f.Trash)
+//console.log(f.rfeed,f.rdisch,f.rtrash)
+
+function called(){
+    let st="<p>added</p>"
+    document.getElementById("fillhere").innerHTML=st;
+    console.log("called")
+}

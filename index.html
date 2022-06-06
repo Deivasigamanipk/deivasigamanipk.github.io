@@ -7,6 +7,7 @@
     <title>Mill Setting</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <meta name="theme-color" content="#FF886A">
+    <script src="assets/script/script.js"></script>
 </head>
 <body>
     <h1>Mill Setting</h1>
@@ -30,6 +31,10 @@
                 <p class="q">Disch.</p>
                 <input type="number" name="disch" id="disch">
             </div>
+            <center>
+                <button>Calculate</button>
+            </center>
+            
         </div>
         
     </section>
@@ -43,27 +48,158 @@
                     <input type="number" name="fiberper" id="fiberper">
                 </div>
                 <div class="inp">
-                    <p class="q">n (pie).</p>
+                    <p class="q">n (pie)</p>
                     <input type="number" name="pie" id="pie">
                 </div>
                 <div class="inp">
-                    <p class="q">L.</p>
+                    <p class="q">L</p>
                     <input type="number" name="L" id="L">
                 </div>
                 <div class="inp">
-                    <p class="q">Trash Ratio.</p>
+                    <p class="q">Trash Ratio</p>
                     <input type="number" name="trashratio" id="trashratio">
                 </div>
                 <div class="inp">
-                    <p class="q">N.</p>
+                    <p class="q">N</p>
                     <input type="number" name="N" id="N">
                 </div>
             </div>
             <h4>Default for mills</h4>
         </div>
     </section>
+    <section class="outputvalues">
+        <div class="outputcontainer">
+            <h3>Common Output</h3>
+            <div class="cmnoutputcontainer">
+                <div class="mill">
+                    <h3>Mill I</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="mill1feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="mill1disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="mill1trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill II</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="mill2feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="mill2disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="mill2trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill III</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="mill3feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="mill3disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="mill3trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill IV</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="mill4feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="mill4disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="mill4trash">1000</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Tramble Output</h3>
+            <div class="cmnoutputcontainer">
+                <div class="mill">
+                    <h3>Mill I</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="tmill1feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="tmill1disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="tmill1trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill II</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="tmill2feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="tmill2disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="tmill2trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill III</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="tmill3feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="tmill3disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="tmill3trash">1000</p>
+                    </div>
+                </div>
+                <div class="mill">
+                    <h3>Mill IV</h3>
+                    <div class="qpair">
+                        <p class="ques">Feed:</p>
+                        <p class="ans" id="tmill4feed">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Disch:</p>
+                        <p class="ans" id="tmill4disch">1000</p>
+                    </div>
+                    <div class="qpair">
+                        <p class="ques">Trash:</p>
+                        <p class="ans" id="tmill4trash">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <footer>
-    <p>dhanush</p>
+    <p>Made By Dhanush</p>
 </footer>
 </body>
 </html>

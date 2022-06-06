@@ -19,6 +19,7 @@ h4{
 }
 p{
     font-size: 16px;
+    margin: 2%;
 }
 input{
     height: 28px;
@@ -31,6 +32,19 @@ input{
     font-weight: bold;
     /* margin-left: auto;
     margin-right: auto; */
+}
+button{
+    font-size: 18px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    height: 35px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* input starts */
@@ -78,3 +92,53 @@ input{
     border-width: 2px;
     border-radius: 15px;
 }
+/* default ends */
+
+/* output starts */
+.outputcontainer{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2% 2%;
+    max-width: 670px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+.cmnoutputcontainer{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.mill{
+    width: 130px;
+    height: 140px;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 4px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+.qpair{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.ques{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15%;
+    min-width: 50px;
+}
+.ans{
+    align-self: center;
+}
+/* output ends */
