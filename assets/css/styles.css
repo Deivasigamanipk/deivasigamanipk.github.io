@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Source Sans Pro");
 body{
     background-color: white;
-    font-family: product sans;
+    font-family: Source Sans Pro;
+    background-image: linear-gradient(#FF886A, #FCF6CF);
 }
 h1{
     text-align: center;
 }
 h3{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin: 2%;
 }
@@ -15,13 +17,18 @@ h4{
     text-align: center;
     margin: 2%;
 }
+p{
+    font-size: 16px;
+}
 input{
     height: 28px;
     border-radius: 5px;
     padding-left: 5%;
     padding-right: 5%;
     width: 150px;
-    margin: 16px 0%;
+    margin: 1% 0%;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
     /* margin-left: auto;
     margin-right: auto; */
 }
@@ -31,7 +38,7 @@ input{
     margin-left: auto;
     margin-right: auto;
 
-    padding: 5% 2%;
+    padding: 2% 2%;
     max-width: 670px;
 
     border-style: solid;
@@ -43,8 +50,8 @@ input{
     flex-direction: column;
     padding-left: 10%;
 
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     /* min-width: 70%; */
     /* align-items: center; */
     /* justify-self: center;
@@ -64,7 +71,7 @@ input{
     margin-top: 5%;
     margin-bottom: 5%;
 
-    padding: 5% 2%;
+    padding: 2% 2%;
     max-width: 670px;
 
     border-style: solid;
