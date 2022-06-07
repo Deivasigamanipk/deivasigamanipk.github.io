@@ -134,6 +134,19 @@ button{
     /* justify-self: center;
     justify-tracks: center; */
 }
+.buttoncontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3%;
+}
+.defbut{
+    width: 45%;
+    font-size: 15px;
+    padding: 5px;
+    
+}
 /* default ends */
 
 /* output starts */
