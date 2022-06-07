@@ -75,6 +75,30 @@ button{
     min-width: 100px;
     margin: 1%;
 }
+.inputdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inpmill{
+    border-style: solid;
+    border-radius: 10px;
+    width: 47%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0.5%;
+}
+
+.inputbox{
+    width: 70%;
+    height: 20px;
+}
+.qi{
+    font-size: 13px;
+}
 
 /* input ends */
 /* default */

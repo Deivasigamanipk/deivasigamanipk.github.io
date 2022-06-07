@@ -72,16 +72,39 @@ function calculate(tch,top,feed,disch,mill) {
 }
 
 function getinput() {
-    let tch,top,feed,disch
+    let tch,top1,feed1,disch1, top2,feed2,disch2, top3,feed3,disch3, top4,feed4,disch4
+
     tch=document.getElementById("tch").value
-    top=document.getElementById("top").value
-    feed=document.getElementById("feed").value
-    disch=document.getElementById("disch").value
+
+    top1=document.getElementById("top1").value
+    feed1=document.getElementById("feed1").value
+    disch1=document.getElementById("disch1").value
+
+    top2=document.getElementById("top2").value
+    feed2=document.getElementById("feed2").value
+    disch2=document.getElementById("disch2").value
+
+    top3=document.getElementById("top3").value
+    feed3=document.getElementById("feed3").value
+    disch3=document.getElementById("disch3").value
+
+    top4=document.getElementById("top4").value
+    feed4=document.getElementById("feed4").value
+    disch4=document.getElementById("disch4").value
     return {
         "tch":parseFloat(tch),
-        "top":parseFloat(top),
-        "feed":parseFloat(feed),
-        "disch":parseFloat(disch)
+        "top1":parseFloat(top1),
+        "feed1":parseFloat(feed1),
+        "disch1":parseFloat(disch1),
+        "top2":parseFloat(top2),
+        "feed2":parseFloat(feed2),
+        "disch2":parseFloat(disch2),
+        "top3":parseFloat(top3),
+        "feed3":parseFloat(feed3),
+        "disch3":parseFloat(disch3),
+        "top4":parseFloat(top4),
+        "feed4":parseFloat(feed4),
+        "disch4":parseFloat(disch4)
     }
 }
 
@@ -90,10 +113,10 @@ function getinput() {
 //console.log(f.rfeed,f.rdisch,f.rtrash)
 
 function calculatef(inpjson) {
-    calculatedjson_m1=calculate(inpjson.tch, inpjson.top, inpjson.feed,inpjson.disch, 0)
-    calculatedjson_m2=calculate(inpjson.tch, inpjson.top, inpjson.feed,inpjson.disch, 1)
-    calculatedjson_m3=calculate(inpjson.tch, inpjson.top, inpjson.feed,inpjson.disch, 2)
-    calculatedjson_m4=calculate(inpjson.tch, inpjson.top, inpjson.feed,inpjson.disch, 3)
+    calculatedjson_m1=calculate(inpjson.tch, inpjson.top1, inpjson.feed1,inpjson.disch1, 0)
+    calculatedjson_m2=calculate(inpjson.tch, inpjson.top2, inpjson.feed2,inpjson.disch2, 1)
+    calculatedjson_m3=calculate(inpjson.tch, inpjson.top3, inpjson.feed3,inpjson.disch3, 2)
+    calculatedjson_m4=calculate(inpjson.tch, inpjson.top4, inpjson.feed4,inpjson.disch4, 3)
     return {
         "mill1":calculatedjson_m1,
         "mill2":calculatedjson_m2,
