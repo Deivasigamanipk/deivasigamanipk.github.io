@@ -15,7 +15,7 @@ h3{
 h4{
     font-weight: bold;
     text-align: center;
-    margin: 2%;
+    margin: 3%;
 }
 p{
     font-size: 16px;
@@ -85,7 +85,7 @@ button{
 
 .inpmill{
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 47%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -115,6 +115,24 @@ button{
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
+}
+.defaultdiffcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.def{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+    /* min-width: 70%; */
+    /* align-items: center; */
+    /* justify-self: center;
+    justify-tracks: center; */
 }
 /* default ends */
 
@@ -166,3 +184,19 @@ button{
     align-self: center;
 }
 /* output ends */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.527);
+    bottom: 0;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+footer>p{
+    padding-top: 15px;
+}
+.author{
+    font-size: 110%;
+    font-weight: bold;
+}
