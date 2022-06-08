@@ -171,3 +171,72 @@ function calculateclick() {
     
 
 }
+
+function setdefaultoutput() {
+    document.getElementById("fiberper").value=fibrepercent
+    document.getElementById("pie").value=n
+    document.getElementById("L").value=L
+    document.getElementById("trashratio").value=trashratio
+    document.getElementById("N").value=N
+
+    document.getElementById("fibreindexm1").value=fibreindex[0]
+    document.getElementById("fibreindexm2").value=fibreindex[1]
+    document.getElementById("fibreindexm3").value=fibreindex[2]
+    document.getElementById("fibreindexm4").value=fibreindex[3]
+
+    document.getElementById("millratiom1").value=millratio[0]
+    document.getElementById("millratiom2").value=millratio[1]
+    document.getElementById("millratiom3").value=millratio[2]
+    document.getElementById("millratiom4").value=millratio[3]
+
+    document.getElementById("liftm1").value=lift[0]
+    document.getElementById("liftm2").value=lift[1]
+    document.getElementById("liftm3").value=lift[2]
+    document.getElementById("liftm4").value=lift[3]
+}
+
+function takedefaultinput(){
+    fibrepercent=document.getElementById("fiberper").value
+    n=document.getElementById("pie").value
+    L=document.getElementById("L").value
+    trashratio=document.getElementById("trashratio").value
+    N = document.getElementById("N").value
+
+    fibreindex[0]=document.getElementById("fibreindexm1").value
+    fibreindex[1]=document.getElementById("fibreindexm2").value
+    fibreindex[2]=document.getElementById("fibreindexm3").value
+    fibreindex[3]=document.getElementById("fibreindexm4").value
+
+    millratio[0]=document.getElementById("millratiom1").value
+    millratio[1]=document.getElementById("millratiom2").value=
+    millratio[2]=document.getElementById("millratiom3").value=
+    millratio[3]=document.getElementById("millratiom4").value=
+
+    lift[0]=document.getElementById("liftm1").value
+    lift[1]=document.getElementById("liftm2").value
+    lift[2]=document.getElementById("liftm3").value
+    lift[3]=document.getElementById("liftm4").value
+}
+
+function changeoriginal() {
+    fibrepercent=jdata.fibrepercent
+    n=jdata.n
+    L=jdata.L
+    trashratio=jdata.trashratio
+    N=jdata.N
+
+    fibreindex=jdata.fibreindex.slice(0,length(jdata.fibreindex))
+    millratio=jdata.millratio.slice(0,length(jdata.millratio))
+    lift=jdata.lift.slice(0,length(jdata.lift))
+}
+
+
+
+function modify() {
+    takedefaultinput()
+    setdefaultoutput()
+}
+function defaultoriginal() {
+    changeoriginal()
+    setdefaultoutput()
+}

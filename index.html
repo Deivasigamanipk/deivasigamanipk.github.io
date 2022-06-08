@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#FF886A">
     <script src="assets/script/script.js"></script>
 </head>
-<body>
+<body onload="setdefaultoutput()">
     <h1>Mill Setting</h1>
     <section class="inputs">
         <div class="inputcontainer">
@@ -181,8 +181,8 @@
                 <!-- default different ends here -->
             </div>
             <div class="buttoncontainer">
-                <button onClick="" class="defbut">Set Default</button>
-                <button onClick="" class="defbut">Modify</button>
+                <button onClick="defaultoriginal()" class="defbut">Set Default</button>
+                <button onClick="modify()" class="defbut">Modify</button>
             </div>
                 
             
