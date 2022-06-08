@@ -208,14 +208,15 @@ function takedefaultinput(){
     fibreindex[3]=document.getElementById("fibreindexm4").value
 
     millratio[0]=document.getElementById("millratiom1").value
-    millratio[1]=document.getElementById("millratiom2").value=
-    millratio[2]=document.getElementById("millratiom3").value=
-    millratio[3]=document.getElementById("millratiom4").value=
+    millratio[1]=document.getElementById("millratiom2").value
+    millratio[2]=document.getElementById("millratiom3").value
+    millratio[3]=document.getElementById("millratiom4").value
 
     lift[0]=document.getElementById("liftm1").value
     lift[1]=document.getElementById("liftm2").value
     lift[2]=document.getElementById("liftm3").value
     lift[3]=document.getElementById("liftm4").value
+    console.log(millratio)
 }
 
 function changeoriginal() {
@@ -225,9 +226,9 @@ function changeoriginal() {
     trashratio=jdata.trashratio
     N=jdata.N
 
-    fibreindex=jdata.fibreindex.slice(0,length(jdata.fibreindex))
-    millratio=jdata.millratio.slice(0,length(jdata.millratio))
-    lift=jdata.lift.slice(0,length(jdata.lift))
+    fibreindex=jdata.fibreindex.slice(0,4)
+    millratio=jdata.millratio.slice(0,4)
+    lift=jdata.lift.slice(0,4)
 }
 
 
