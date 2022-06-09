@@ -236,8 +236,12 @@ function changeoriginal() {
 function modify() {
     takedefaultinput()
     setdefaultoutput()
+    console.log("clicked1")
+    document.getElementById("calculateindi").innerHTML="<p><b>Current Values:</b> Modified</p>";
+    console.log("clicked")
 }
 function defaultoriginal() {
     changeoriginal()
     setdefaultoutput()
+    document.getElementById("calculateindi").innerHTML="<p><b>Current Values:</b> Default</p>";
 }
