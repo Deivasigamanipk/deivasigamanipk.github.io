@@ -163,6 +163,9 @@ button{
     padding: 2% 2%;
     max-width: 670px;
 
+    margin-top: 5%;
+    margin-bottom: 5%;
+
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
